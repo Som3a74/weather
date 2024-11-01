@@ -41,7 +41,7 @@ let res ;
 
 async function get_data (default_city = getCoordintes()) {
 
-    let res1 = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=fca7143602c74e38b6d52825230511&q=${default_city || 'cairo'}&days=5`);
+    let res1 = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=fca7143602c74e38b6d52825230511&q=${default_city || 'cairo'}&days=5`);
     res = await res1.json()
     if (res1.status == 200) {
         change_bg()
