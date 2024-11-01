@@ -86,17 +86,17 @@ async function forcast() {
 async function change_bg() {
     if (res.forecast.forecastday[0].day.avgtemp_c >= 15 && res.forecast.forecastday[0].day.avgtemp_c <= 30) {
         locations.style.color = '#ffe352'
-        bg_img.style.backgroundImage ="url('imges/summery.jpg')"
+        bg_img.style.backgroundImage ="url('imges/summery.webp')"
     }
     
     else if(res.forecast.forecastday[0].day.avgtemp_c < 15 && res.forecast.forecastday[0].day.avgtemp_c > 5 ){
         locations.style.color = '#4ACEC5'
-        bg_img.style.backgroundImage ='url(imges/winter.png)'
+        bg_img.style.backgroundImage ='url(imges/winter.webp)'
     }
 
     else if(res.forecast.forecastday[0].day.avgtemp_c <= 5 ){
         locations.style.color = '#BABDC4'
-        bg_img.style.backgroundImage ='url(imges/snow.jpg)'
+        bg_img.style.backgroundImage ='url(imges/snow.webp)'
     }
 
     else if(res.forecast.forecastday[0].day.avgtemp_c > 30 ){
